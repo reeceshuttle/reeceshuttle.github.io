@@ -7,200 +7,204 @@
     <!-- Add your stylesheets or other head elements here -->
   </head>
   <body>
-    <header>
-      <h1>Reece Shuttleworth</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="home">
-      <h2>Welcome to Your Website!</h2>
-      <p>This is the home section of your website.</p>
-      <div class="two-pics-and-description">
-        <img src="assets/pigeon.jpeg" alt="pic w pigeons" />
-        <div class="description-with-buttons">
-          <h2>Reece Shuttleworth</h2>
-          <p>About me:</p>
+    <div class="container-header">
+      <header>
+        <h1>Reece Shuttleworth</h1>
+        <nav>
           <ul>
-            <li>
-              I'm studying Machine Learning at MIT:
-              <ul>
-                <li>I completed by BS in Dec. 2023.</li>
-                <li>I'm currently working to finish my MEng in May 2025.</li>
-              </ul>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
           </ul>
-          <div class="row-of-buttons">
+        </nav>
+      </header>
+    </div>
+    <div class="container-content">
+      <section id="home">
+        <h2>Welcome to Your Website!</h2>
+        <p>This is the home section of your website.</p>
+        <div class="two-pics-and-description">
+          <img src="assets/pigeon.jpeg" alt="pic w pigeons" />
+          <div class="description-with-buttons">
+            <h2>Reece Shuttleworth</h2>
+            <p>About me:</p>
             <ul>
               <li>
-                <a href="https://github.com/reeceshuttle" target="_blank"
-                  ><button>
-                    <img
-                      src="assets/github-mark.png"
-                      alt="button to my github"
-                    /></button
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://scholar.google.com/citations?user=J1d4PXYAAAAJ&hl=en"
-                  target="_blank"
-                  ><button>
-                    <img
-                      src="assets/google-scholar-circular.png"
-                      alt="button to my google scholar"
-                    /></button
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/reece-shuttleworth/"
-                  target="_blank"
-                  ><button>
-                    <img
-                      src="assets/linkedin-circular.png"
-                      alt="button to my linkedin"
-                    /></button
-                ></a>
+                I'm studying Machine Learning at MIT:
+                <ul>
+                  <li>I completed by BS in Dec. 2023.</li>
+                  <li>I'm currently working to finish my MEng in May 2025.</li>
+                </ul>
               </li>
             </ul>
+            <div class="row-of-buttons">
+              <ul>
+                <li>
+                  <a href="https://github.com/reeceshuttle" target="_blank"
+                    ><button>
+                      <img
+                        src="assets/github-mark.png"
+                        alt="button to my github"
+                      /></button
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://scholar.google.com/citations?user=J1d4PXYAAAAJ&hl=en"
+                    target="_blank"
+                    ><button>
+                      <img
+                        src="assets/google-scholar-circular.png"
+                        alt="button to my google scholar"
+                      /></button
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/reece-shuttleworth/"
+                    target="_blank"
+                    ><button>
+                      <img
+                        src="assets/linkedin-circular.png"
+                        alt="button to my linkedin"
+                      /></button
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <img src="assets/suit-selfie2.jpeg" alt="pic w suit on" />
         </div>
-        <img src="assets/suit-selfie2.jpeg" alt="pic w suit on" />
-      </div>
-    </section>
-    <hr />
-    <section id="p&p">
-      <h1>Projects & Publications</h1>
-      <p>be more in depth about projects here. include media.</p>
-    </section>
+      </section>
+      <hr />
+      <section id="p&p">
+        <h1>Projects & Publications</h1>
+        <p>be more in depth about projects here. include media.</p>
+      </section>
 
-    <section id="proposal">
-      <h2>Proposal</h2>
-      <p>
-        In class, we have learned that training ML models on historical data
-        that reflects bias can lead to ML models that are also biased. For
-        example, we have learned about this in the context of loan applications,
-        where biases against black people led them to getting fewer loans
-        approved in historical data and therefore also in ML loan approving
-        systems. We also learned about this in the context of hiring, where data
-        that reflected sexist hiring practices led to Amazon's hiring system
-        being biased against women. Transformers, which are the basis of Large
-        Language Models like ChatGPT, have taken over the machine learning
-        space. These models are trained on huge amounts of text data on the
-        internet, and therefore may inherit some or all of the bias that is
-        contained on the internet. One class of these models, Bidirectional
-        Encoder Representations from Transformers[9] (BERT) models, can be used
-        to predict the identity of masked words in a sentence. For example,
-        predicting ‘road’ for the mask in the sentence “Why did the chicken
-        cross the [MASK].” This opens the possibility of probing the model for
-        its beliefs by seeing the difference in predicted probabilities across
-        words.
-      </p>
-      <p>
-        We hope to investigate the following questions: First, how well can we
-        systematically quantify the bias in various BERT (encoder-only)
-        transformer models? Second, can we finetune these BERT models to
-        overcome their bias in a general way? Quantifying bias would be
-        important because BERT models are used in many deployed AI systems today
-        and understanding their bias and how models perform on these tests would
-        improve trust in these systems and decision making in which models to
-        deploy. Overcoming bias via finetuning would be promising because this
-        would provide a path forward for making fairer and more equitable models
-        without needing to drastically change the frameworks that current ML
-        models are built on.
-      </p>
-      <p>
-        Prior work has examined bias in BERT models in the context of social
-        bias[2], gender bias[5], and racial bias[6]. In all three areas, BERT
-        models have been shown to contain bias, likely originating from the
-        human biases in its pre-training data[2]. This could have important
-        implications, because currently BERT models are prominent to themselves
-        detect things like hate speech on the internet[9]. This bias in
-        transformer models is confirmed in [7], which showed that while LLMs are
-        improving, they still show bias on the CrowS-Pairs[13] and WinoGender
-        benchmarks[12]. However, in this literature there is no systematic or
-        centralized measure of bias in these models: they test for different
-        things in different situations and use different datasets, making it
-        difficult to compare a model's different biases or quantify the amount
-        of bias.
-      </p>
-      <p>
-        Datasets that have been used to test bias have been structured in
-        various ways to test this bias. For gender bias, a dataset referencing
-        different occupations with ‘gotcha’ questions was used to test gender
-        occupation bias[12]. Other datasets have used masked token prediction of
-        adjectives describing someone to test the stereotypes of the models[11].
-        Masked token prediction is powerful because you can see the probability
-        differences between two predictions for what text is located behind the
-        mask. However, we found it difficult to find simple yet effective
-        datasets using masked token prediction to test bias across the three
-        areas of race, gender, and social circumstances.
-      </p>
-      <p>
-        Our technical approach for evaluating the bias in BERT models is as
-        follows. We will examine the original BERT model[1] on the cloze(masked
-        token prediction) task. Our dataset that we will use to test this model
-        will consist of hand crafted sentences that are designed to test the
-        gender, racial, and social biases of the model. To be more specific:
-        while the sentences will be constructed such that each group should have
-        equal probability of being the masked token, we will design them in a
-        loaded manner so that if the model is biased, it will be tricked into
-        favoring one group over the other. Initial experiments will consist of
-        just two groups(two example pairs are “black and white” and “man and
-        woman”). We will measure the average absolute value difference in
-        probability across our examples in order to determine how skewed the
-        model is towards one group or another. This will help us determine if
-        the model is biased.
-      </p>
-      <p>
-        If we determine this model is biased, we will attempt to correct these
-        biases in a general way through updating the model weights. There are
-        two ways in which we will try to do this. First, we will use our dataset
-        to finetune the BERT model with a technique called LoRA[8]. LoRA is a
-        fine-tuning approach used to make subtle and general changes to a model.
-        Here, we would use the masked token prediction training objective, with
-        the racial group that was preferred less being used as the target token.
-        Second and independently, we will use model editing techniques like
-        ROME[3] and MEMIT[4] to edit the biased beliefs. These approaches are
-        designed for editing specific factual beliefs, and it is our hypothesis
-        that these techniques could be helpful for updating biased beliefs.
-        Again, we will use our dataset for the factual editing, but in this case
-        we will update the model to answer with the less favored group with
-        higher probability. It is our hope that one of these methods will
-        generally correct the bias in these models.
-      </p>
-      <p>
-        If our work is successful, our fine-tuning methods would reduce the bias
-        in BERT models. However, it is possible that this work could be reverse
-        engineered to instead increase the bias in BERT models. This possibility
-        to exacerbate bias in AI cannot be taken lightly and we will need to
-        take these arguments into account when deciding, if the work is
-        successful, if and how to release the work. Also, stating that we have
-        found a way to test the bias in models could lead to overconfidence if
-        the test is not comprehensive enough, since a model could score
-        perfectly but still be biased in some way. We will likely need to issue
-        disclaimers that these tests are not intended to prove a lack of bias,
-        but instead to help identify bias. We will also need to do our due
-        diligence to see if our dataset actually does effectively test for bias.
-      </p>
-    </section>
+      <section id="proposal">
+        <h2>Proposal</h2>
+        <p>
+          In class, we have learned that training ML models on historical data
+          that reflects bias can lead to ML models that are also biased. For
+          example, we have learned about this in the context of loan
+          applications, where biases against black people led them to getting
+          fewer loans approved in historical data and therefore also in ML loan
+          approving systems. We also learned about this in the context of
+          hiring, where data that reflected sexist hiring practices led to
+          Amazon's hiring system being biased against women. Transformers, which
+          are the basis of Large Language Models like ChatGPT, have taken over
+          the machine learning space. These models are trained on huge amounts
+          of text data on the internet, and therefore may inherit some or all of
+          the bias that is contained on the internet. One class of these models,
+          Bidirectional Encoder Representations from Transformers[9] (BERT)
+          models, can be used to predict the identity of masked words in a
+          sentence. For example, predicting ‘road’ for the mask in the sentence
+          “Why did the chicken cross the [MASK].” This opens the possibility of
+          probing the model for its beliefs by seeing the difference in
+          predicted probabilities across words.
+        </p>
+        <p>
+          We hope to investigate the following questions: First, how well can we
+          systematically quantify the bias in various BERT (encoder-only)
+          transformer models? Second, can we finetune these BERT models to
+          overcome their bias in a general way? Quantifying bias would be
+          important because BERT models are used in many deployed AI systems
+          today and understanding their bias and how models perform on these
+          tests would improve trust in these systems and decision making in
+          which models to deploy. Overcoming bias via finetuning would be
+          promising because this would provide a path forward for making fairer
+          and more equitable models without needing to drastically change the
+          frameworks that current ML models are built on.
+        </p>
+        <p>
+          Prior work has examined bias in BERT models in the context of social
+          bias[2], gender bias[5], and racial bias[6]. In all three areas, BERT
+          models have been shown to contain bias, likely originating from the
+          human biases in its pre-training data[2]. This could have important
+          implications, because currently BERT models are prominent to
+          themselves detect things like hate speech on the internet[9]. This
+          bias in transformer models is confirmed in [7], which showed that
+          while LLMs are improving, they still show bias on the CrowS-Pairs[13]
+          and WinoGender benchmarks[12]. However, in this literature there is no
+          systematic or centralized measure of bias in these models: they test
+          for different things in different situations and use different
+          datasets, making it difficult to compare a model's different biases or
+          quantify the amount of bias.
+        </p>
+        <p>
+          Datasets that have been used to test bias have been structured in
+          various ways to test this bias. For gender bias, a dataset referencing
+          different occupations with ‘gotcha’ questions was used to test gender
+          occupation bias[12]. Other datasets have used masked token prediction
+          of adjectives describing someone to test the stereotypes of the
+          models[11]. Masked token prediction is powerful because you can see
+          the probability differences between two predictions for what text is
+          located behind the mask. However, we found it difficult to find simple
+          yet effective datasets using masked token prediction to test bias
+          across the three areas of race, gender, and social circumstances.
+        </p>
+        <p>
+          Our technical approach for evaluating the bias in BERT models is as
+          follows. We will examine the original BERT model[1] on the
+          cloze(masked token prediction) task. Our dataset that we will use to
+          test this model will consist of hand crafted sentences that are
+          designed to test the gender, racial, and social biases of the model.
+          To be more specific: while the sentences will be constructed such that
+          each group should have equal probability of being the masked token, we
+          will design them in a loaded manner so that if the model is biased, it
+          will be tricked into favoring one group over the other. Initial
+          experiments will consist of just two groups(two example pairs are
+          “black and white” and “man and woman”). We will measure the average
+          absolute value difference in probability across our examples in order
+          to determine how skewed the model is towards one group or another.
+          This will help us determine if the model is biased.
+        </p>
+        <p>
+          If we determine this model is biased, we will attempt to correct these
+          biases in a general way through updating the model weights. There are
+          two ways in which we will try to do this. First, we will use our
+          dataset to finetune the BERT model with a technique called LoRA[8].
+          LoRA is a fine-tuning approach used to make subtle and general changes
+          to a model. Here, we would use the masked token prediction training
+          objective, with the racial group that was preferred less being used as
+          the target token. Second and independently, we will use model editing
+          techniques like ROME[3] and MEMIT[4] to edit the biased beliefs. These
+          approaches are designed for editing specific factual beliefs, and it
+          is our hypothesis that these techniques could be helpful for updating
+          biased beliefs. Again, we will use our dataset for the factual
+          editing, but in this case we will update the model to answer with the
+          less favored group with higher probability. It is our hope that one of
+          these methods will generally correct the bias in these models.
+        </p>
+        <p>
+          If our work is successful, our fine-tuning methods would reduce the
+          bias in BERT models. However, it is possible that this work could be
+          reverse engineered to instead increase the bias in BERT models. This
+          possibility to exacerbate bias in AI cannot be taken lightly and we
+          will need to take these arguments into account when deciding, if the
+          work is successful, if and how to release the work. Also, stating that
+          we have found a way to test the bias in models could lead to
+          overconfidence if the test is not comprehensive enough, since a model
+          could score perfectly but still be biased in some way. We will likely
+          need to issue disclaimers that these tests are not intended to prove a
+          lack of bias, but instead to help identify bias. We will also need to
+          do our due diligence to see if our dataset actually does effectively
+          test for bias.
+        </p>
+      </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>
-        This is where you can provide information about your website or
-        organization.
-      </p>
-    </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          This is where you can provide information about your website or
+          organization.
+        </p>
+      </section>
+    </div>
 
     <footer>
-      <p>Add buttons to linkedin, google scholar, email, more here.</p>
+      <p>Updated 12/29/2023.</p>
     </footer>
 
     <!-- Add your scripts or other body elements here -->

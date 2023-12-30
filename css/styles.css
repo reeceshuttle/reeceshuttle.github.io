@@ -1,25 +1,21 @@
 html {
   /* margin: 0; */
-  padding: 0;
+  /* padding: 0; */
   /* justify-content: center; */
 }
 
 body {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* justify-content: center; */
   /* width: 800px; */
   /* overflow: hidden; */
+  /* min-width: 1000px; */
+  /* max-width: 1000px; */
 }
 
-/* body *:not(header) {
-  max-width: 1000px;
-  min-width: 1000px;
-} */
-
-header {
-  width: 100%;
+.container-header header {
   background-color: #34c4e8;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -36,34 +32,42 @@ header {
   align-items: center;
 }
 
-header h1 {
+.container-header h1 {
   color: white;
 }
 
-nav {
+.container-header nav {
   background-color: #34c4e8;
   display: flex;
   justify-content: space-around;
   /* width: 100%; */
 }
 
-nav ul {
+.container-header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav li {
+.container-header nav li {
   margin-right: 30px;
 }
 
-nav a {
+.container-header nav a {
   text-decoration: none;
   color: white;
 }
 
-button {
+.container-content {
+  /* display: flex; */
+  min-width: 1000px;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 0 auto; /* this was the crucial line to get the centering to work */
+}
+
+.container-content button {
   padding-top: 10px;
   background-color: white;
   color: white;
@@ -74,23 +78,26 @@ button {
 
 .two-pics-and-description {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
+  margin: 0 auto;
+
+  /* width: 1000px; */
 }
 
 .two-pics-and-description img {
-  border-radius: 100px;
+  border-radius: 50px;
   overflow: hidden;
-  max-width: 300px;
+  /* max-width: 300px; */
   /* max-height: 150px; */
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
 .description-with-buttons {
   /* display: flex; */
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   padding-left: 10px;
   padding-right: 10px;
   padding: 10px;
@@ -98,35 +105,20 @@ button {
 
 .row-of-buttons {
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
 }
 
-/* Style the image if needed */
 .row-of-buttons img {
-  width: 40px; /* Adjust the width of the image */
-  height: 40px; /* Adjust the height of the image */
-  /* margin-right: 5px; */
+  width: 40px;
+  height: 40px;
 }
 
 .row-of-buttons ul {
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* .rounded-favicon {
-  border-radius: 10%;
-} */
-
-#home h2 {
-  justify-content: center;
+.two-pics-and-description h2 {
   color: #34c4e8;
-}
-
-#proposal {
-  /* width: 600px; */
 }
 
 footer {
