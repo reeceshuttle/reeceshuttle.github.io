@@ -2,6 +2,8 @@ html {
   /* margin: 0; */
   /* padding: 0; */
   /* justify-content: center; */
+  scroll-behavior: smooth;
+  font-family: "DM Sans";
 }
 
 body {
@@ -67,13 +69,8 @@ body {
   margin: 0 auto; /* this was the crucial line to get the centering to work */
 }
 
-.container-content button {
-  padding-top: 10px;
-  background-color: white;
-  color: white;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
+.container-content #proposal {
+  background-color: #d1ffbd;
 }
 
 .two-pics-and-description {
@@ -81,17 +78,21 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
-  /* width: 1000px; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #1cb8df;
 }
 
 .two-pics-and-description img {
-  border-radius: 50px;
+  border-radius: 25px;
   overflow: hidden;
   /* max-width: 300px; */
   /* max-height: 150px; */
   width: 300px;
   height: auto;
+  /* height: 300px; */
+  /* width: auto; */
 }
 
 .description-with-buttons {
@@ -101,10 +102,33 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding: 10px;
+  border-style: solid;
+  border-color: #1cb8df;
+
+  box-sizing: border-box;
+
+  /* margin-top: 0px;
+  border-top: 0px;
+  padding-top: 0px; */
 }
 
 .row-of-buttons {
   display: flex;
+  /* margin: 0 auto; */
+  /* justify-content: center; */
+  border-style: solid;
+  border-color: #1cb8df;
+  /* margin-left: 0px; */
+  /* padding-left: 0px; */
+}
+
+.row-of-buttons button {
+  padding-top: 10px;
+  background-color: white;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
 }
 
 .row-of-buttons img {
@@ -117,8 +141,15 @@ body {
   display: flex;
 }
 
-.two-pics-and-description h2 {
+.description-with-buttons h2 {
   color: #34c4e8;
+  text-align: center;
+  margin-top: 0px;
+  border-top: 0px;
+  padding-top: 0px;
+
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* margin: 0 auto; */
 }
 
 footer {
