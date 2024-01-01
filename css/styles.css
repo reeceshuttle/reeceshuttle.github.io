@@ -15,10 +15,53 @@ body {
   /* overflow: hidden; */
   /* min-width: 1000px; */
   /* max-width: 1000px; */
+  background-color: #bfd;
+}
+
+.landing-page {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background-color: white;
+  color: black;
+  text-align: center;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+
+.landing-page.display-none {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  background-color: white;
+  color: black;
+  text-align: center;
+  opacity: 0;
+
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 .container-header header {
-  background-color: #34c4e8;
+  /* background-color: #34c4e8; */
+  background-color: #bfd;
   padding-top: 0px;
   padding-bottom: 0px;
   /* padding: 10px; */
@@ -35,11 +78,12 @@ body {
 }
 
 .container-header h1 {
-  color: white;
+  color: black;
 }
 
 .container-header nav {
-  background-color: #34c4e8;
+  /* background-color: #34c4e8; */
+  background-color: #bfd;
   display: flex;
   justify-content: space-around;
   /* width: 100%; */
@@ -56,9 +100,19 @@ body {
   margin-right: 30px;
 }
 
+.container-header nav li:hover {
+  text-decoration: underline;
+  color: #e06;
+}
+
 .container-header nav a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.container-header nav a:hover {
+  text-decoration: none;
+  color: #e06;
 }
 
 .container-content {
@@ -69,10 +123,6 @@ body {
   margin: 0 auto; /* this was the crucial line to get the centering to work */
 }
 
-.container-content #proposal {
-  background-color: #d1ffbd;
-}
-
 .two-pics-and-description {
   display: flex;
   align-items: center;
@@ -80,8 +130,6 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-style: solid;
-  border-color: #1cb8df;
 }
 
 .two-pics-and-description img {
@@ -93,6 +141,7 @@ body {
   height: auto;
   /* height: 300px; */
   /* width: auto; */
+  padding: 3px;
 }
 
 .description-with-buttons {
@@ -102,38 +151,84 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding: 10px;
-  border-style: solid;
-  border-color: #1cb8df;
-
+  /* border-style: solid; */
+  /* border-color: black; */
+  /* border-color: #1cb8df; */
+  /* border-radius: 5% / 25%; */
+  /* border-width: 2px; */
+  /* border-radius: 5%; */
+  /* background-color: white; */
   box-sizing: border-box;
+  min-width: 400px;
+  max-width: 400px;
 
   /* margin-top: 0px;
   border-top: 0px;
   padding-top: 0px; */
 }
 
+/* .table-of-contents {
+  text-align: center;
+} */
+
+.table-of-contents li {
+  list-style-position: inside;
+  border-left: 1px solid black;
+  padding-left: 5px;
+}
+
+.table-of-contents ol {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.table-of-contents h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.table-of-contents li:hover {
+  text-decoration: underline;
+  color: #e06;
+}
+.table-of-contents a:hover {
+  text-decoration: none;
+  color: #e06;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+  color: black;
+}
+
 .row-of-buttons {
   display: flex;
   /* margin: 0 auto; */
-  /* justify-content: center; */
-  border-style: solid;
-  border-color: #1cb8df;
-  /* margin-left: 0px; */
-  /* padding-left: 0px; */
+  justify-content: center;
+  align-items: center;
+  /* border-style: solid; */
+  /* border-color: #1cb8df; */
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 40px; /*this should be deleted, and instead should find a way to stop the lopsidedness.*/
+  margin: 0 auto;
 }
 
 .row-of-buttons button {
   padding-top: 10px;
-  background-color: white;
+  background-color: #bfd;
   color: white;
   border: none;
   border-radius: 0px;
   cursor: pointer;
+  /* padding-left: zero; */
+  /* margin-left: zero; */
 }
 
 .row-of-buttons img {
   width: 40px;
   height: 40px;
+  /* border-style: solid; */
 }
 
 .row-of-buttons ul {
@@ -142,7 +237,7 @@ body {
 }
 
 .description-with-buttons h2 {
-  color: #34c4e8;
+  color: black;
   text-align: center;
   margin-top: 0px;
   border-top: 0px;
@@ -152,9 +247,31 @@ body {
   /* margin: 0 auto; */
 }
 
+.description-with-buttons hr {
+  width: 100px;
+  color: black;
+  border: 1px solid #000;
+  /* height: 12px; */
+  /* border: 0; */
+  /* box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); */
+}
+
+hr {
+  color: black;
+  border: 1px solid #000;
+}
+
+#projects h2 {
+  margin-left: 15px;
+}
+
+#projects h3 {
+  margin-left: 30px;
+}
+
 footer {
-  background-color: #34c4e8;
-  color: white;
+  background-color: #bfd;
+  color: black;
 
   padding-top: 10px;
   padding-bottom: 10px;

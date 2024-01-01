@@ -16,15 +16,19 @@
     />
   </head>
   <body>
+    <div class="landing-page">
+      <h1>Welcome to Reece Shuttleworth's website.</h1>
+      <h2 class="fade-in">(click anywhere to continue)</h2>
+    </div>
+
     <div class="container-header">
       <header>
         <h1>Reece Shuttleworth</h1>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#p&p">My Work</a></li>
-            <li><a href="#proposal">Test</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">My Bio</a></li>
+            <li><a href="#projects">My Work</a></li>
             <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
           </ul>
         </nav>
@@ -37,30 +41,21 @@
         <div class="two-pics-and-description">
           <img src="assets/pigeon.jpeg" alt="pic w pigeons" />
           <div class="description-with-buttons">
-            <h2>Reece Shuttleworth</h2>
-            <p>🏫:MIT (add logo here)</p>
-            <p>About me:</p>
-            <ul>
-              <li>
-                I'm studying Machine Learning at MIT:
-                <ul>
-                  <li>I completed by BS in Dec. 2023.</li>
-                  <li>I'm currently working to finish my MEng in May 2025.</li>
-                </ul>
-              </li>
-              <li>
-                I am interested in machine learning research, primarily
-                associated with transformers.
-              </li>
-              <li>
-                I am interested in machine learning research, primarily
-                associated with transformers.
-              </li>
-              <li>
-                I am interested in machine learning research, primarily
-                associated with transformers.
-              </li>
-            </ul>
+            <h2>My Table of Contents</h2>
+            <hr />
+            <!-- <p>
+              Make the below look like obsidian. make this look more obvious as
+              links? add brackets? add arrows or something? Make this section
+              the directory, with links to every section here? and resume?
+            </p> -->
+            <div class="table-of-contents">
+              <ol>
+                <li><a href="#about">Bio</a></li>
+                <li><a href="#projects">Projects & Publications</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ol>
+            </div>
+            <hr />
             <div class="row-of-buttons">
               <ul>
                 <li>
@@ -101,35 +96,34 @@
         </div>
       </section>
       <hr />
-      <section id="p&p">
-        <h1>Projects & Publications</h1>
+      <section id="about">
+        <h2>Bio</h2>
         <p>
-          be more in depth about projects here. include media. Separate by year.
-          Also separate projects and publications.
+          Bio here.
         </p>
       </section>
+      <hr>
 
-      <section id="proposal">
-        <h2>Proposal</h2>
+      <section id="projects">
+        <h1>Projects & Publications</h1>
+        <h2>2023</h2>
+        <h3>Transformer Sparsity</h3>
+        <p>info here.</p>
+        <h3>Bias in BERT models</h3>
         <p>
-          In class, we have learned that training ML models on historical data
-          that reflects bias can lead to ML models that are also biased. For
-          example, we have learned about this in the context of loan
-          applications, where biases against black people led them to getting
-          fewer loans approved in historical data and therefore also in ML loan
-          approving systems. We also learned about this in the context of
-          hiring, where data that reflected sexist hiring practices led to
-          Amazon's hiring system being biased against women. Transformers, which
-          are the basis of Large Language Models like ChatGPT, have taken over
-          the machine learning space. These models are trained on huge amounts
-          of text data on the internet, and therefore may inherit some or all of
-          the bias that is contained on the internet. One class of these models,
-          Bidirectional Encoder Representations from Transformers[9] (BERT)
-          models, can be used to predict the identity of masked words in a
-          sentence. For example, predicting ‘road’ for the mask in the sentence
-          “Why did the chicken cross the [MASK].” This opens the possibility of
-          probing the model for its beliefs by seeing the difference in
-          predicted probabilities across words.
+          be more in depth about projects here. include media. Separate by year.
+          Also separate projects and publications. Make it raw for now with a
+          description for each project like same did. And add an about me
+          section before this. Have vertical line to help with visual?
+        <h2>2022</h2>
+        </p>
+      </section>
+      <hr>
+
+      <section id="blog">
+        <h2>Blog</h2>
+        <p>
+          Under Construction.
         </p>
         <p>
           We hope to investigate the following questions: First, how well can we
@@ -221,19 +215,13 @@
         </p>
       </section>
 
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          This is where you can provide information about your website or
-          organization.
-        </p>
-      </section>
     </div>
 
     <footer>
-      <p>Updated 12/29/2023.</p>
+      <p>Updated 12/31/2023.</p>
     </footer>
 
     <!-- Add your scripts or other body elements here -->
+    <script src="js/index.js"></script>
   </body>
 </html>
