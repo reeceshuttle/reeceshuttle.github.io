@@ -1,7 +1,4 @@
 html {
-  /* margin: 0; */
-  /* padding: 0; */
-  /* justify-content: center; */
   scroll-behavior: smooth;
   font-family: "DM Sans";
 }
@@ -9,13 +6,12 @@ html {
 body {
   padding-left: 20px;
   padding-right: 20px;
-  /* margin: 0 auto; */
-  /* justify-content: center; */
-  /* width: 800px; */
-  /* overflow: hidden; */
-  /* min-width: 1000px; */
-  /* max-width: 1000px; */
   background-color: #bfd;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #e06;
 }
 
 .landing-page {
@@ -28,8 +24,6 @@ body {
   background-color: white;
   color: black;
   text-align: center;
-  /* display: inline-block; */
-  /* vertical-align: middle; */
 }
 
 .landing-page.display-none {
@@ -43,9 +37,6 @@ body {
   color: black;
   text-align: center;
   opacity: 0;
-
-  /* display: inline-block; */
-  /* vertical-align: middle; */
 }
 
 @keyframes fadeIn {
@@ -60,21 +51,22 @@ body {
 }
 
 .container-header header {
-  /* background-color: #34c4e8; */
   background-color: #bfd;
+  /* background-image: linear-gradient(#bfd, #66ffb2); */
+  background-image: linear-gradient(#bfd, #99ffcc);
   padding-top: 0px;
   padding-bottom: 0px;
-  /* padding: 10px; */
   margin-top: -10px;
   padding-left: 20px;
   padding-right: 10px;
   margin-left: -30px;
   margin-right: -30px;
-  /* margin-bottom: 10px; */
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed; /* this makes the nav bar above */
+  width: 100%; /* this makes the nav bar above */
 }
 
 .container-header h1 {
@@ -82,11 +74,9 @@ body {
 }
 
 .container-header nav {
-  /* background-color: #34c4e8; */
-  background-color: #bfd;
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
-  /* width: 100%; */
 }
 
 .container-header nav ul {
@@ -101,7 +91,8 @@ body {
 }
 
 .container-header nav li:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-decoration: none;
   color: #e06;
 }
 
@@ -116,11 +107,11 @@ body {
 }
 
 .container-content {
-  /* display: flex; */
   min-width: 1000px;
   max-width: 1000px;
   justify-content: center;
   margin: 0 auto; /* this was the crucial line to get the centering to work */
+  padding-top: 60px; /* this makes the nav bar above */
 }
 
 .two-pics-and-description {
@@ -135,41 +126,19 @@ body {
 .two-pics-and-description img {
   border-radius: 25px;
   overflow: hidden;
-  /* max-width: 300px; */
-  /* max-height: 150px; */
   width: 300px;
   height: auto;
-  /* height: 300px; */
-  /* width: auto; */
   padding: 3px;
 }
 
 .description-with-buttons {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   padding-left: 10px;
   padding-right: 10px;
   padding: 10px;
-  /* border-style: solid; */
-  /* border-color: black; */
-  /* border-color: #1cb8df; */
-  /* border-radius: 5% / 25%; */
-  /* border-width: 2px; */
-  /* border-radius: 5%; */
-  /* background-color: white; */
   box-sizing: border-box;
   min-width: 400px;
   max-width: 400px;
-
-  /* margin-top: 0px;
-  border-top: 0px;
-  padding-top: 0px; */
 }
-
-/* .table-of-contents {
-  text-align: center;
-} */
 
 .table-of-contents li {
   list-style-position: inside;
@@ -187,27 +156,25 @@ body {
   padding: 0;
 }
 
-.table-of-contents li:hover {
+/* .table-of-contents li:hover {
   text-decoration: underline;
   color: #e06;
-}
-.table-of-contents a:hover {
+} */
+
+/* .table-of-contents a:hover {
   text-decoration: none;
   color: #e06;
-}
+} */
 
-.table-of-contents a {
+/* .table-of-contents a {
   text-decoration: none;
   color: black;
-}
+} */
 
 .row-of-buttons {
   display: flex;
-  /* margin: 0 auto; */
   justify-content: center;
   align-items: center;
-  /* border-style: solid; */
-  /* border-color: #1cb8df; */
   margin-left: 0px;
   padding-left: 0px;
   padding-right: 40px; /*this should be deleted, and instead should find a way to stop the lopsidedness.*/
@@ -216,19 +183,16 @@ body {
 
 .row-of-buttons button {
   padding-top: 10px;
-  background-color: #bfd;
+  background-color: transparent;
   color: white;
   border: none;
   border-radius: 0px;
   cursor: pointer;
-  /* padding-left: zero; */
-  /* margin-left: zero; */
 }
 
 .row-of-buttons img {
   width: 40px;
   height: 40px;
-  /* border-style: solid; */
 }
 
 .row-of-buttons ul {
@@ -242,18 +206,12 @@ body {
   margin-top: 0px;
   border-top: 0px;
   padding-top: 0px;
-
-  /* font-family: "Source Sans Pro", sans-serif; */
-  /* margin: 0 auto; */
 }
 
 .description-with-buttons hr {
   width: 100px;
   color: black;
   border: 1px solid #000;
-  /* height: 12px; */
-  /* border: 0; */
-  /* box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); */
 }
 
 hr {
@@ -267,6 +225,16 @@ hr {
 
 #projects h3 {
   margin-left: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#projects p {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 footer {

@@ -6,20 +6,15 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Add your stylesheets or other head elements here -->
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=DM Sans"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="landing-page">
+    <!-- <div class="landing-page">
       <h1>Welcome to Reece Shuttleworth's website.</h1>
       <h2 class="fade-in">(click anywhere to continue)</h2>
-    </div>
+    </div> -->
 
     <div class="container-header">
       <header>
@@ -99,126 +94,181 @@
       <section id="about">
         <h2>Bio</h2>
         <p>
-          Bio here.
+          Hello, I'm Reece! I want to create safe AI that aims to solve our most
+          important and pressing problems.
+        </p>
+        <p>
+          Currently, I am an MEng student at MIT, working to understand how and
+          why transformers and other deep neural nets work in hopes to make
+          better models. I also did my undergrad at MIT in 2.5 years, studying
+          <a
+            href="https://www.eecs.mit.edu/academics/undergraduate-programs/curriculum/6-9-computation-and-cognition/"
+            target="_blank"
+            >computer science and cognitive science.</a
+          >
+          <!-- mention that is major is good for ML/AI? Also, mention poggios name?-->
+        </p>
+        <p>
+          This past summer, I interned in the bay area at
+          <a href="https://numenta.com" target="_blank">Numenta</a>, and worked
+          on parameter efficient fine-tuning methods for sparse transformer
+          models in order to reduce the hardware requirements associated with
+          fine-tuning. Previously, I worked in CSAIL in the Learning and
+          Intelligent Systems group, where I worked on
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J1d4PXYAAAAJ&citation_for_view=J1d4PXYAAAAJ:d1gkVwhDpl0C"
+            target="_blank"
+            >solving planning problems with AI.</a
+          >
+          Separately, I have also done work
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J1d4PXYAAAAJ&citation_for_view=J1d4PXYAAAAJ:u5HHmVD_uO8C"
+            target="_blank"
+            >using Large Language Models</a
+          >
+          to solve math and science problems.
+        </p>
+        <p>
+          I also run for
+          <a
+            href="https://mitathletics.com/sports/mens-cross-country/roster/reece-shuttleworth/11642"
+            target="_blank"
+            >MIT</a
+          >.
+          <!-- and like to read in my free time. -->
         </p>
       </section>
-      <hr>
+      <hr />
 
       <section id="projects">
         <h1>Projects & Publications</h1>
         <h2>2023</h2>
-        <h3>Transformer Sparsity</h3>
+        <h3>Characterizing Sparsity in Transformers</h3>
+        <p>
+          <a href="assets/9.58-Final-Project-Report.pdf" target="_blank"
+            >[paper]</a
+          >
+          <a href="https://github.com/reeceshuttle/958" target="_blank"
+            >[code]</a
+          >
+        </p>
         <p>info here.</p>
         <h3>Bias in BERT models</h3>
         <p>
-          be more in depth about projects here. include media. Separate by year.
-          Also separate projects and publications. Make it raw for now with a
-          description for each project like same did. And add an about me
-          section before this. Have vertical line to help with visual?
+          <a href="assets/6.3950-Final-Project-Report.pdf" target="_blank"
+            >[paper]</a
+          >
+          <a href="https://github.com/reeceshuttle/63950" target="_blank"
+            >[code]</a
+          >
+
+          <a
+            href="https://wandb.ai/finetuning-bert/finetuning-bert?workspace=user-reece-shuttle"
+            target="_blank"
+            >[WandB runs]</a
+          >
+        </p>
+        <p>info here.</p>
+
+        <h3>Gabor filter-constrained CNNs</h3>
+        <p>
+          <a href="assets/960-final-project.pdf" target="_blank">[paper]</a>
+          <a
+            href="https://github.com/samacqua/gabor-constrained-nns"
+            target="_blank"
+            >[code]</a
+          >
+        </p>
+
+        <p>
+          Humans have more general and robust object recognition capabilities in
+          comparison to machines. In this work, we investigated whether
+          constraining convolutional neural networks to be more human-like, via
+          the use of Gabor filters, improves their performance and their
+          robustness against adversarial attacks.
+        </p>
+        <h3>MIT Pokerbots</h3>
+        <p>
+          <a href="https://github.com/reeceshuttle/poker-bot" target="_blank"
+            >[code]</a
+          >
+        </p>
+        <p>
+          I competed in the 2023 MIT Pokerbots competition and placed in the top
+          10%, resulting in a cash prize. The variant played in this competition
+          was River of Blood Hold'em.
+        </p>
         <h2>2022</h2>
+        <h3>PDDL Planning with Pretrained Large Language Models</h3>
+        <p>
+          <a href="assets/pddl_planning.pdf" target="_blank">[paper]</a>
+          <a
+            href="https://github.com/Learning-and-Intelligent-Systems/llm4pddl"
+            target="_blank"
+            >[code]</a
+          >
+        </p>
+        <p>
+          <u>Paper Abstract</u>: We study few-shot prompting of pretrained large
+          language models (LLMs) towards solving PDDL planning problems. We are
+          interested in two questions: (1) To what extent can LLMs solve PDDL
+          planning problems on their own? (2) How and to what extent can LLMs be
+          used to guide AI planners? Recent work by Valmeekam et al. (2022)
+          presents negative evidence for (1) in the classic blocks world domain.
+          We confirm this finding, but expand the inquiry to 18 domains and find
+          more mixed results with a few clear successes. For (2), we propose a
+          simple mechanism for using good-but-imperfect LLM outputs to aid a
+          heuristic-search planner. We also find that the LLM performance is due
+          not only to syntactic pattern matching, but also to its commonsense
+          understanding of English terms that appear in the PDDL.
+        </p>
+        <h3>Using Large Language Models to Solve College Math</h3>
+        <p>
+          <a href="assets/llms-for-math.pdf" target="_blank">[paper]</a>
+          <a href="https://github.com/idrori/mathQ" target="_blank">[code]</a>
+        </p>
+        <p>
+          <u>Paper Abstract</u>: We demonstrate that a neural network pretrained
+          on text and fine-tuned on code solves mathematics course problems,
+          explains solutions, and generates questions at a human level. We
+          automatically synthesize programs using few-shot learning and OpenAI’s
+          Codex transformer and execute them to solve course problems at 81%
+          automatic accuracy. We curate a dataset of questions from
+          Massachusetts Institute of Technology (MIT)’s largest mathematics
+          courses (Single Variable and Multivariable Calculus, Differential
+          Equations, Introduction to Probability and Statistics, Linear Algebra,
+          and Mathematics for Computer Science) and Columbia University’s
+          Computational Linear Algebra. We solve questions from a MATH dataset
+          (on Prealgebra, Algebra, Counting and Probability, Intermediate
+          Algebra, Number Theory, and Precalculus), the latest benchmark of
+          advanced mathematics problems designed to assess mathematical
+          reasoning. We randomly sample questions and generate solutions with
+          multiple modalities, including numbers, equations, and plots. The
+          latest GPT-3 language model pretrained on text automatically solves
+          only 18.8% of these university questions using zero-shot learning and
+          30.8% using few-shot learning and the most recent chain of thought
+          prompting. In contrast, program synthesis with few-shot learning using
+          Codex fine-tuned on code generates programs that automatically solve
+          81% of these questions. Our approach improves the previous
+          state-of-the-art automatic solution accuracy on the benchmark topics
+          from 8.8 to 81.1%. We perform a survey to evaluate the quality and
+          difficulty of generated questions. This work automatically solves
+          university-level mathematics course questions at a human level and
+          explains and generates university-level mathematics course questions
+          at scale, a milestone for higher education.
         </p>
       </section>
-      <hr>
+      <hr />
 
       <section id="blog">
         <h2>Blog</h2>
-        <p>
-          Under Construction.
-        </p>
-        <p>
-          We hope to investigate the following questions: First, how well can we
-          systematically quantify the bias in various BERT (encoder-only)
-          transformer models? Second, can we finetune these BERT models to
-          overcome their bias in a general way? Quantifying bias would be
-          important because BERT models are used in many deployed AI systems
-          today and understanding their bias and how models perform on these
-          tests would improve trust in these systems and decision making in
-          which models to deploy. Overcoming bias via finetuning would be
-          promising because this would provide a path forward for making fairer
-          and more equitable models without needing to drastically change the
-          frameworks that current ML models are built on.
-        </p>
-        <p>
-          Prior work has examined bias in BERT models in the context of social
-          bias[2], gender bias[5], and racial bias[6]. In all three areas, BERT
-          models have been shown to contain bias, likely originating from the
-          human biases in its pre-training data[2]. This could have important
-          implications, because currently BERT models are prominent to
-          themselves detect things like hate speech on the internet[9]. This
-          bias in transformer models is confirmed in [7], which showed that
-          while LLMs are improving, they still show bias on the CrowS-Pairs[13]
-          and WinoGender benchmarks[12]. However, in this literature there is no
-          systematic or centralized measure of bias in these models: they test
-          for different things in different situations and use different
-          datasets, making it difficult to compare a model's different biases or
-          quantify the amount of bias.
-        </p>
-        <p>
-          Datasets that have been used to test bias have been structured in
-          various ways to test this bias. For gender bias, a dataset referencing
-          different occupations with ‘gotcha’ questions was used to test gender
-          occupation bias[12]. Other datasets have used masked token prediction
-          of adjectives describing someone to test the stereotypes of the
-          models[11]. Masked token prediction is powerful because you can see
-          the probability differences between two predictions for what text is
-          located behind the mask. However, we found it difficult to find simple
-          yet effective datasets using masked token prediction to test bias
-          across the three areas of race, gender, and social circumstances.
-        </p>
-        <p>
-          Our technical approach for evaluating the bias in BERT models is as
-          follows. We will examine the original BERT model[1] on the
-          cloze(masked token prediction) task. Our dataset that we will use to
-          test this model will consist of hand crafted sentences that are
-          designed to test the gender, racial, and social biases of the model.
-          To be more specific: while the sentences will be constructed such that
-          each group should have equal probability of being the masked token, we
-          will design them in a loaded manner so that if the model is biased, it
-          will be tricked into favoring one group over the other. Initial
-          experiments will consist of just two groups(two example pairs are
-          “black and white” and “man and woman”). We will measure the average
-          absolute value difference in probability across our examples in order
-          to determine how skewed the model is towards one group or another.
-          This will help us determine if the model is biased.
-        </p>
-        <p>
-          If we determine this model is biased, we will attempt to correct these
-          biases in a general way through updating the model weights. There are
-          two ways in which we will try to do this. First, we will use our
-          dataset to finetune the BERT model with a technique called LoRA[8].
-          LoRA is a fine-tuning approach used to make subtle and general changes
-          to a model. Here, we would use the masked token prediction training
-          objective, with the racial group that was preferred less being used as
-          the target token. Second and independently, we will use model editing
-          techniques like ROME[3] and MEMIT[4] to edit the biased beliefs. These
-          approaches are designed for editing specific factual beliefs, and it
-          is our hypothesis that these techniques could be helpful for updating
-          biased beliefs. Again, we will use our dataset for the factual
-          editing, but in this case we will update the model to answer with the
-          less favored group with higher probability. It is our hope that one of
-          these methods will generally correct the bias in these models.
-        </p>
-        <p>
-          If our work is successful, our fine-tuning methods would reduce the
-          bias in BERT models. However, it is possible that this work could be
-          reverse engineered to instead increase the bias in BERT models. This
-          possibility to exacerbate bias in AI cannot be taken lightly and we
-          will need to take these arguments into account when deciding, if the
-          work is successful, if and how to release the work. Also, stating that
-          we have found a way to test the bias in models could lead to
-          overconfidence if the test is not comprehensive enough, since a model
-          could score perfectly but still be biased in some way. We will likely
-          need to issue disclaimers that these tests are not intended to prove a
-          lack of bias, but instead to help identify bias. We will also need to
-          do our due diligence to see if our dataset actually does effectively
-          test for bias.
-        </p>
+        <p>Under Construction.</p>
       </section>
-
+      <hr />
     </div>
 
     <footer>
-      <p>Updated 12/31/2023.</p>
+      <p>Updated 01/01/2024.</p>
     </footer>
 
     <!-- Add your scripts or other body elements here -->
