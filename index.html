@@ -22,7 +22,7 @@
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">My Bio</a></li>
+            <li><a href="#bio">My Bio</a></li>
             <li><a href="#projects">My Work</a></li>
             <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
           </ul>
@@ -31,18 +31,11 @@
     </div>
     <div class="container-content">
       <section id="home">
-        <!-- <h2>Welcome to Your Website!</h2> -->
-        <!-- <p>This is the home section of your website.</p> -->
         <div class="two-pics-and-description">
           <img src="assets/pigeon.jpeg" alt="pic w pigeons" />
           <div class="description-with-buttons">
             <h2>My Table of Contents</h2>
             <hr />
-            <!-- <p>
-              Make the below look like obsidian. make this look more obvious as
-              links? add brackets? add arrows or something? Make this section
-              the directory, with links to every section here? and resume?
-            </p> -->
             <div class="table-of-contents">
               <ol>
                 <li><a href="#about">Bio</a></li>
@@ -91,11 +84,12 @@
         </div>
       </section>
       <hr />
-      <section id="about">
+      <section id="bio">
         <h2>Bio</h2>
         <p>
           Hello, I'm Reece! I want to create safe AI that aims to solve our most
-          important and pressing problems.
+          important and pressing problems. Feel free to contact me at
+          <a href="mailto:rshuttle@mit.edu">rshuttle@mit.edu</a>.
         </p>
         <p>
           Currently, I am an MEng student at MIT, working to understand how and
@@ -109,7 +103,7 @@
           <!-- mention that is major is good for ML/AI? Also, mention poggios name?-->
         </p>
         <p>
-          This past summer, I interned in the bay area at
+          This past summer, I interned in the Bay Area at
           <a href="https://numenta.com" target="_blank">Numenta</a>, and worked
           on parameter efficient fine-tuning methods for sparse transformer
           models in order to reduce the hardware requirements associated with
@@ -134,8 +128,11 @@
             href="https://mitathletics.com/sports/mens-cross-country/roster/reece-shuttleworth/11642"
             target="_blank"
             >MIT</a
+          >
+          and like to watch
+          <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank"
+            >space videos</a
           >.
-          <!-- and like to read in my free time. -->
         </p>
       </section>
       <hr />
@@ -152,7 +149,15 @@
             >[code]</a
           >
         </p>
-        <p>info here.</p>
+        <p>
+          Theoretical and biological reasons suggest that sparsity may be
+          important for deep neural network to perform well. Here, we examine
+          the attention blocks of large transformer models to identify sparse
+          features in their weights and/or activations. One interesting finding
+          is that the weight matricies used in attention have
+          <i>very low stable rank</i>, especially the matrix product
+          \(W_qW_k^T\).
+        </p>
         <h3>Bias in BERT models</h3>
         <p>
           <a href="assets/6.3950-Final-Project-Report.pdf" target="_blank"
@@ -168,7 +173,16 @@
             >[WandB runs]</a
           >
         </p>
-        <p>info here.</p>
+        <p>
+          Historical training data used for training machine learning models can
+          be biased, and machine learning models are susceptible to inheriting
+          this bias. In this work, we use the masked token prediction
+          capabilities of BERT models to show that they contain gender and
+          racial bias. We create a dataset and use a novel loss function in
+          order to reduce bias via finetuning. Preliminary analysis shows that
+          this finetuning is successful at reducing bias, but needs to be
+          examined further.
+        </p>
 
         <h3>Gabor filter-constrained CNNs</h3>
         <p>
@@ -208,6 +222,7 @@
             >[code]</a
           >
         </p>
+        <p><u>Published in the NeurIPS FMDM Workshop.</u></p>
         <p>
           <u>Paper Abstract</u>: We study few-shot prompting of pretrained large
           language models (LLMs) towards solving PDDL planning problems. We are
@@ -227,6 +242,7 @@
           <a href="assets/llms-for-math.pdf" target="_blank">[paper]</a>
           <a href="https://github.com/idrori/mathQ" target="_blank">[code]</a>
         </p>
+        <p><u>Published in PNAS.</u></p>
         <p>
           <u>Paper Abstract</u>: We demonstrate that a neural network pretrained
           on text and fine-tuned on code solves mathematics course problems,
@@ -268,10 +284,14 @@
     </div>
 
     <footer>
-      <p>Updated 01/01/2024.</p>
+      <p>Updated 01/02/2024.</p>
     </footer>
-
     <!-- Add your scripts or other body elements here -->
     <script src="js/index.js"></script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
   </body>
 </html>
