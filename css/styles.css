@@ -143,6 +143,11 @@ body a:hover {
   text-align: center;
 }
 
+.description-with-buttons p {
+  /* margin-top: -5px; */
+  margin: 5px;
+}
+
 .table-of-contents li {
   list-style-position: inside;
   /* border-left: 1px solid black; */
@@ -182,6 +187,7 @@ body a:hover {
   margin-left: 0px;
   padding-left: 0px;
   padding-right: 40px; /*this should be deleted, and instead should find a way to stop the lopsidedness.*/
+  /* padding-bottom: 0px; */
   margin: 0 auto;
 }
 
@@ -243,6 +249,24 @@ hr {
 }
 
 #projects p {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#publications h2 {
+  margin-left: 15px;
+}
+
+#publications h3 {
+  margin-left: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#publications p {
   margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
