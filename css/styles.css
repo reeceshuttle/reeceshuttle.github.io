@@ -148,6 +148,11 @@ body a:hover {
   margin: 5px;
 }
 
+.description-with-buttons h3 {
+  /* margin-top: -5px; */
+  margin: 5px;
+}
+
 .table-of-contents li {
   list-style-position: inside;
   /* border-left: 1px solid black; */
