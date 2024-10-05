@@ -6,7 +6,11 @@ html {
 body {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #bfd;
+  /* background-color: #bfd;
+  opacity: 0.5; */
+  /* background-color: rgba(187, 255, 221, 0.7); */
+  background-color: white;
+  /* background-color: #ccffcc; */
 }
 
 body a:hover {
@@ -52,9 +56,13 @@ body a:hover {
 
 .container-header header {
   /* background-color: #bfd; */
-  /* background-image: linear-gradient(#bfd, #9fc); */
-  background-image: linear-gradient(#9fc, #bfd);
-  /* background-image: linear-gradient(#bfd, #66ffb2); */
+  /* background-image: linear-gradient(#9fc, #bfd); */
+  background-image: linear-gradient(#bfd, white);
+  /* background-image: linear-gradient(
+    rgba(153, 255, 204, 0.7),
+    rgba(187, 255, 221, 0.7)
+  ); */
+  /* background-image: linear-gradient(#9fc, rgb(187, 255, 221), 0.7); */
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: -10px;
@@ -285,7 +293,7 @@ hr {
 
 footer {
   /* background-color: #bfd; */
-  background-image: linear-gradient(#bfd, #9fc);
+  background-image: linear-gradient(white, #bfd);
   color: black;
 
   padding-top: 10px;
