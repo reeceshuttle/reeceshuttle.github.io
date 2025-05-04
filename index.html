@@ -97,10 +97,14 @@
       <section id="publications">
         <h1>Publications</h1>
         <h3>LoRA vs Full Finetuning: An Illusion of Equivalence</h3>
-        <p>Details coming soon.</p>
+        <p>
+          <a href="https://arxiv.org/pdf/2410.21228" target="_blank">[paper]</a>
+        </p>
+        <p>Currently under review.</p>
         <h3>PDDL Planning with Pretrained Large Language Models</h3>
         <p>
           <a href="assets/pddl_planning.pdf" target="_blank">[paper]</a>
+          <!-- use this link: https://openreview.net/pdf?id=1QMMUB4zfl -->
           <a
             href="https://github.com/Learning-and-Intelligent-Systems/llm4pddl"
             target="_blank"
@@ -163,6 +167,53 @@
 
       <section id="projects">
         <h1>Projects</h1>
+        <h3>
+          Exploring the Causes & Effects of Quantization-induced Degradation in
+          LLMs
+        </h3>
+        <p>
+          <a href="assets/deep_learning_blog/index.html" target="_blank"
+            >[blog]</a
+          >
+          <a
+            href="https://github.com/reeceshuttle/deep-learning-proj"
+            target="_blank"
+            >[code]</a
+          >
+        </p>
+        <p>
+          We extend on recent work(Scaling Laws for Precision) showing that
+          quantized models degrade in performance more significantly past a
+          certain amount of training steps. We confirm their findings on larger
+          models (OLMo-1B & 7B) and on downstream tasks. Further, we find that
+          there are no abnormally large or growing activation statistics across
+          training steps, suggesting that large activations are not the cause of
+          this degradation. Lastly, we trace the quantized error for each weight
+          matrix of the model and find that across training steps, the attention
+          projection (\(W_{QKV}\)) weights consistently has growing quantization
+          error, while other modules have roughly similar quantization error
+          across steps. This suggests that Quantization-induced degradation may
+          be due to growing quantization error in the queries, keys, and values
+          across training steps.
+        </p>
+
+        <h3>Exploring Activation-aware Quantization for LLMs</h3>
+        <p>
+          <a href="assets/6_5940_Final_Project_Report.pdf" target="_blank"
+            >[paper]</a
+          >
+          <a href="https://github.com/reeceshuttle/tinyml-proj" target="_blank"
+            >[code]</a
+          >
+        </p>
+        <p>
+          Studied mixed precision and activation aware quantization in order to
+          extend lossless quantization of weights and activations past 8-bit.
+          Our investigation finds limitations extending quantization past 6
+          bits, suggesting that achieving lossless 4-bit quanitzation, which can
+          be leveraged for practical benefits, will be challenging to achieve.
+        </p>
+
         <h3>Analyzing Inference Optimizations for Transformers</h3>
         <p><a href="assets/6.5930_Project.pdf" target="_blank">[paper]</a></p>
         <p>
@@ -270,7 +321,7 @@
     </div>
 
     <footer>
-      <p>Updated 09/04/2024.</p>
+      <p>Updated 05/04/2025.</p>
     </footer>
     <!-- Add your scripts or other body elements here -->
     <script src="js/index.js"></script>
